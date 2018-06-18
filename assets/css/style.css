@@ -1,0 +1,166 @@
+/* ===========TAGS=========== */
+a {text-decoration: none;}
+body {
+    background: #ddd;
+}
+h1 {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    padding: 15px;
+    color: #4aaaa5;
+}
+img { /* in me test the image didn't need relative */
+    border: 2px solid white;
+    margin: 20px;
+    position: relative;
+}
+span {
+    padding: 15px;
+}
+/* ==========CLASSES========= */
+.container {
+/*  Container that holds the image, contact, index content
+    is smaller on smaller screens */
+    clear: right;
+    margin-left: 100px;
+    width: 720px;
+    height: 1000px;
+    background: white;
+}
+.image1Label {
+    top: 180px;
+    left: 22px; /*must match image margin+border*/
+    width: 209px;
+    height: 20px;
+    background: #4aaaa5;
+    position: absolute;
+    padding: 8px;
+}
+.image2Label {
+    padding: 8px;
+    top: 180px;
+    left: 295px;
+    /*must match image margin+border*/
+    width: 209px;
+    height: 20px;
+    background: #4aaaa5;
+    position: absolute;
+}
+.image3Label {
+    padding: 8px;
+    top: 180px;
+    left: 22px;
+    /*must match image margin+border*/
+    width: 209px;
+    height: 20px;
+    background: #4aaaa5;
+    position: absolute;
+}
+.nav {float: right; padding-top: 15px; padding-bottom: 15px;}
+.navbar {
+    /* margin: 0 auto; */
+    width: 100%;
+    height: 60px;
+    background: #eee;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+}
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.navThree {
+    width: 240px;
+    height: 80px;
+    background: #ccc;
+    float: right;
+    border: 5px solid black;
+}
+.portfolioRow {
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.portfolioRow3 { /* because I don't have time to figure out why row3 fails */
+    top: 10px;
+    /* left: 2px; */
+    float: left;
+    position: relative;
+    text-align: center;
+}
+/* .myName {
+    width: 240px;
+    height: 80px;
+    background: teal;
+    float: left;
+} */
+.row{
+    margin: 0 auto;
+    width: 960px;
+    border: 5px solid red;
+}
+.squishyrow{
+    width: 100%;
+    border: 5px solid green;
+}
+/* ============ID============ */
+#image {float: left;}
+#myName {
+    margin-left: 100px;
+    float: left;
+    width: 100px;
+    background: #4aaaa5;
+    padding: 18px;
+    color: white;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    .container {
+        height: 1500px;
+        width: 360px;
+    }
+    .image1Label {
+        top: 180px;
+        left: 68px; 
+        /*must match image margin+border*/
+    }
+    .image2Label {
+        top: 454px;
+        left: 68px; 
+        /*must match image margin+border*/
+    }
+    .image3Label {
+        top: 180px;
+        left: 22px; 
+        /*must match image margin+border*/
+    }
+    .nav {margin-right: -50px;    }
+    .navbar {
+        /* margin: 0 auto; */
+        width: 360px;
+    }
+    .portfolioRow3 { /*not sure what is wrong with row3 */
+        top: 10px;
+        left: 46px;
+    }
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 600px;
+    }
+    #myName {
+        text-align: center;
+        margin-left: 80px;
+        float: left;
+        width: 100%;    
+    }
+    #submit {
+        width: 80px;
+        height: 30px;
+        background: #4aaaa5;
+        padding: 10px;
+    }
+}
