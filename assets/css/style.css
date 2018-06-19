@@ -5,7 +5,7 @@ body {
 }
 h1 {
     font-family: 'Georgia', Times, "Times New Roman", serif;
-    padding: 15px;
+    padding-top: 15px;
     color: #4aaaa5;
 }
 img { /* in me test the image didn't need relative */
@@ -17,6 +17,9 @@ span {
     padding: 15px;
 }
 /* ==========CLASSES========= */
+.contactInput {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+}
 .container {
 /*  Container that holds the image, contact, index content
     is smaller on smaller screens */
@@ -25,6 +28,7 @@ span {
     width: 720px;
     height: 1000px;
     background: white;
+    padding-left: 20px;
 }
 .image1Label {
     top: 180px;
@@ -75,6 +79,12 @@ span {
     float: right;
     border: 5px solid black;
 }
+.pageName {
+    width: 720px;
+    height: 70px;
+    border-bottom: 1px solid #999;
+    padding-left: 0px;
+}
 .portfolioRow {
     float: left;
     position: relative;
@@ -87,12 +97,6 @@ span {
     position: relative;
     text-align: center;
 }
-/* .myName {
-    width: 240px;
-    height: 80px;
-    background: teal;
-    float: left;
-} */
 .row{
     margin: 0 auto;
     width: 960px;
@@ -112,7 +116,16 @@ span {
     padding: 18px;
     color: white;
 }
-
+#submit {
+    width: 100px;
+    background: #4aaaa5;
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    /* background: #4aaaa5; */
+    padding: 10px;
+}
 /*
   These rules take effect when the browser's width
   is either 768px or less.
@@ -156,11 +169,5 @@ span {
         margin-left: 80px;
         float: left;
         width: 100%;    
-    }
-    #submit {
-        width: 80px;
-        height: 30px;
-        background: #4aaaa5;
-        padding: 10px;
     }
 }
